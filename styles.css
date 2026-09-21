@@ -67,18 +67,9 @@ section {
     color: var(--color-text);
 }
 
-.nav-login {
+.nav-btn {
     display: flex;
-    align-items: center;
     gap: var(--space-sm);
-}
-
-.nav-login button {
-    background-color: var(--color-border);
-    padding: var(--space-xs) var(--space-sm);
-    border: none;
-    border-radius: var(--radius-sm);
-    font-family: var(--font-sans);
 }
 
 .hero {
@@ -108,16 +99,6 @@ section {
     font-size: var(--text-base);
     color: var(--color-on-accent);
     margin-top: var(--space-sm);
-}
-
-.hero button {
-  margin-top: var(--space-md);
-  padding: var(--space-xs) var(--space-md);
-  background-color: var(--color-inverse);
-  color: var(--color-on-inverse);
-  border: none;
-  border-radius: var(--radius-sm);
-  font-size: var(--text-base);
 }
 
 .hero-image {
@@ -156,10 +137,6 @@ section {
         display: flex;
         flex-direction: column;
     }
-
-    .features h2 {
-        width: 30%;
-    }
 }
 
 /* Sesion 3 */
@@ -178,12 +155,6 @@ section {
     gap: var(--space-sm);
 }
 
-.advantage-grid button{
-    border: none;
-    border-radius: var(--radius-sm);
-    padding: var(--space-xs) var(--space-sm);
-}
-
 @media (min-width: 768px) {
     .advantages {
         display: flex;
@@ -194,12 +165,6 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--space-sm);
-    }
-    .advantage-card {
-        width: 60%;
-    }
-    .advantages-intro {
-        width: 30%;
     }
 }
 
@@ -225,4 +190,33 @@ section {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+/* Sesion 4 */
+
+.btn-download {
+  margin-top: var(--space-md);
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--color-inverse);
+  color: var(--color-on-inverse);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+}
+
+.btn-more {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-inverse {
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-sm);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
