@@ -43,6 +43,10 @@ body{
   font-family: var(--font-sans);
 }
 
+section {
+    padding: var(--space-xl) var(--space-md);
+}
+
 /* Sesion 1 */
 
 .navbar {
@@ -85,6 +89,7 @@ body{
     background-color: var(--color-accent);
     padding: var(--space-lg);
     margin: var(--space-md);
+    border-radius: var(--radius-md);
 }
 
 @media (min-width: 768px) {
@@ -131,9 +136,60 @@ body{
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
 }
 
 .features h2 {
     font-size: var(--text-xl);
     margin-bottom: var(--space-md);
+    width: 25%;
+}
+
+.feature-card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+/* Sesion 3 */
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+}
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.advantage-card {
+    width: 80%;
+}
+
+.advantages-intro {
+    width: 30%;
+}
+
+.advantage-grid button{
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-xs) var(--space-sm);
+}
+
+@media (min-width: 768px) {
+    .advantages {
+        gap: 20%;
+    }
+    .advantage-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .advantage-card {
+        width: 60%;
+    }
+    .advantages-intro {
+        width: 30%;
+    }
 }
