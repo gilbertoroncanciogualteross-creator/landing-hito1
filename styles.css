@@ -74,6 +74,7 @@ button, input {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-sm) var(--space-md);
+    flex-wrap: wrap;
 }
 
 .nav-links {
