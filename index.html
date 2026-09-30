@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Landing Hito1</title>
 </head>
 <body>
 
@@ -24,7 +24,7 @@
             <div class="nav-btn">
                 <button class="btn-inverse">Log In</button>
                 <button class="btn-download">Download App</button>
-                <button id="theme-toggle">Change the theme</button>
+                <button id="theme-toggle">🌙/☀️</button>
             </div>
         </nav>
 
@@ -163,19 +163,18 @@
             </div>
         </footer>
     </div>
+    
+    <script>
+        const btn = document.getElementById('theme-toggle');
+
+        btn.addEventListener('click', () => {
+            if(document.documentElement.dataset.theme === "light") {
+                document.documentElement.dataset.theme = "dark";
+            }
+            else if(document.documentElement.dataset.theme === "dark") {
+                document.documentElement.dataset.theme = "light";
+            }
+        })
+    </script>
 </body>
 </html>
-
-<script>
-    const btn = document.getElementById('theme-toggle');
-
-    btn.addEventListener('click', () => {
-        if(document.documentElement.dataset.theme === "light") {
-            document.documentElement.dataset.theme = "dark";
-        }
-        else if(document.documentElement.dataset.theme === "dark") {
-            document.documentElement.dataset.theme = "light";
-        }
-    })
-
-</script>
